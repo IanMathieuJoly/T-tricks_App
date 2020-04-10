@@ -33,6 +33,7 @@ class Forme
         int getType();
         bool isPreview();
         void setPreview(bool val);
+		int** getMatrice() { return matrice; };
     private:
         int x;
         int y;

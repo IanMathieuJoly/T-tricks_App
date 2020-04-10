@@ -1,10 +1,12 @@
 #include "level.h"
 
+
 Level::Level()
 {
-    tickTime = 800;
-    levelNumber = 0;
+	tickTime = 700;
+	levelNumber = 0;
 }
+
 
 void Level::update(int linesCleared)
 {

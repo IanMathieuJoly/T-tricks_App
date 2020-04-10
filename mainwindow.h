@@ -18,6 +18,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+	GameWindow *gamePage;
 public slots:
 	void showOption();
 	void showGame();
@@ -35,7 +36,7 @@ private:
 	QAction *exitAct;
 	QLabel *screenTitle;
 	OptionWindow *optionPage;
-	GameWindow *gamePage;
+	
 	
 
 };

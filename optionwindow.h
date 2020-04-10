@@ -6,6 +6,9 @@
 #include <qpushbutton.h>
 #include <qlabel.h>
 #include <QSound.h>
+#include <iostream>
+
+using namespace std;
 
 class OptionWindow : public QMainWindow
 {
@@ -14,13 +17,23 @@ class OptionWindow : public QMainWindow
 public:
 	OptionWindow(QWidget *parent = nullptr);
 	~OptionWindow();
+	int difficulte;
+
 public slots:
-	
+	void facile();
+	void moyen();
+	void difficile();
+
 
 private:
+
+	QVBoxLayout *layoutOption;
 	QWidget *optionWidget;
-	QGridLayout *layoutOption;
-	QPushButton *acceptButton;
+	QPushButton *boutonRetour;
+	QPushButton *boutonFacile;
+	QPushButton *boutonMoyen;
+	QPushButton *boutonDifficile;
+
 
 };
 #endif // MAINWINDOW_H

@@ -16,8 +16,8 @@ Forme::Forme(int type)
     {
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[1] = new int[MAX_SIZE] {0,1,0,0,0};
-       matrice[2] = new int[MAX_SIZE] {0,1,1,1,0};
+       matrice[1] = new int[MAX_SIZE] {0,2,0,0,0};
+       matrice[2] = new int[MAX_SIZE] {0,2,2,2,0};
        matrice[3] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
@@ -25,8 +25,8 @@ Forme::Forme(int type)
     {
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[1] = new int[MAX_SIZE] {0,0,0,1,0};
-       matrice[2] = new int[MAX_SIZE] {0,1,1,1,0};
+       matrice[1] = new int[MAX_SIZE] {0,0,0,3,0};
+       matrice[2] = new int[MAX_SIZE] {0,3,3,3,0};
        matrice[3] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
@@ -36,8 +36,8 @@ Forme::Forme(int type)
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[1] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[2] = new int[MAX_SIZE] {0,0,1,1,0};
-       matrice[3] = new int[MAX_SIZE] {0,0,1,1,0};
+       matrice[2] = new int[MAX_SIZE] {0,0,4,4,0};
+       matrice[3] = new int[MAX_SIZE] {0,0,4,4,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
     else if(type == FORMES)
@@ -45,16 +45,16 @@ Forme::Forme(int type)
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[1] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[2] = new int[MAX_SIZE] {0,0,1,1,0};
-       matrice[3] = new int[MAX_SIZE] {0,1,1,0,0};
+       matrice[2] = new int[MAX_SIZE] {0,0,5,5,0};
+       matrice[3] = new int[MAX_SIZE] {0,5,5,0,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
     else if(type == FORMET)
     {
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[1] = new int[MAX_SIZE] {0,0,1,0,0};
-       matrice[2] = new int[MAX_SIZE] {0,1,1,1,0};
+       matrice[1] = new int[MAX_SIZE] {0,0,6,0,0};
+       matrice[2] = new int[MAX_SIZE] {0,6,6,6,0};
        matrice[3] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
@@ -63,8 +63,8 @@ Forme::Forme(int type)
        matrice = new int*[MAX_SIZE];
        matrice[0] = new int[MAX_SIZE] {0,0,0,0,0};
        matrice[1] = new int[MAX_SIZE] {0,0,0,0,0};
-       matrice[2] = new int[MAX_SIZE] {0,1,1,0,0};
-       matrice[3] = new int[MAX_SIZE] {0,0,1,1,0};
+       matrice[2] = new int[MAX_SIZE] {0,7,7,0,0};
+       matrice[3] = new int[MAX_SIZE] {0,0,7,7,0};
        matrice[4] = new int[MAX_SIZE] {0,0,0,0,0};
     }
     typeForme = type;

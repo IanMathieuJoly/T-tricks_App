@@ -1,8 +1,6 @@
 #include <QApplication>
 #include <iostream>
-#include "forme.h"
 #include "test.h"
-#include "game.h"
 #include "mainwindow.h"
 
 using namespace std;

@@ -3,10 +3,14 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
+	//INITIALISATION PAGES
 	centralWidget = new QWidget();
+	optionPage = new OptionWindow;
 	
+
+
 	//MUSIQUE
-	musique = new QSound("./Image/TetrisMetal.wav");
+	musique = new QSound("./Image/TetrisClassique.wav");
 	musique->play();
 	musique->setLoops(-1);
 
@@ -46,6 +50,8 @@ MainWindow::MainWindow(QWidget *parent)
 	
 	centralWidget->setLayout(layoutPrincipal);
 	setCentralWidget(centralWidget);
+
+	
 }
 
 MainWindow::~MainWindow()
@@ -73,7 +79,7 @@ void MainWindow::showOption()
 void MainWindow::showGame()
 {
 	gamePage = new GameWindow;
+	gamePage->setDiff(optionPage->difficulte);
 	gamePage->show();
 }
-
 
