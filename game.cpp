@@ -313,16 +313,22 @@ void Game::keyPressEvent(QKeyEvent *event)
 			bougerForme(curForme, 1, 0);
 			this->repaint();
 			break;
-
+		
 		case Qt::Key_Down:
-			bougerForme(curForme, 0, 23);
+			bougerForme(curForme, 0, 1);
 			this->repaint();
 			break;
-
+			
 		case Qt::Key_Up:
 			tournerForme(curForme);
 			this->repaint();
 			break;
+
+		case Qt::Key_Space:
+			bougerForme(curForme, 0, 23);
+			this->repaint();
+			break;
+
 
 		default:
 			QFrame::keyPressEvent(event);
